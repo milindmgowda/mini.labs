@@ -82,7 +82,7 @@ export function SignUpForm({
             <img
               src="https://i.ibb.co/m535jz1K/login.png"
               alt="Image"
-              className="absolute inset-0 h-full w-full object-fill dark:brightness-[0.2] dark:grayscale"
+              className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </div>
         </CardContent>
