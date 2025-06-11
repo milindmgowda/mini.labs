@@ -55,12 +55,12 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "http://localhost:3000",
-    src: "https://jumpshare.com/s/UZo9vlepk0Du2BLq9AJw",
+    src: "https://i.ibb.co/kV1wxr4m/Mediamodifier-Design-2.png",
     alt: "logo",
     title: "Mini.Labs",
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: "Home", url: "/" },
     {
       title: "Products",
       url: "#",

@@ -42,6 +42,23 @@ const Hero1 = ({
     },
   },
 }: Hero1Props) => {
+  const code = `
+  // This knowledge, once reserved for elite cat whisperers,
+  // is now printed to your humble console — for free.
+  async function getCatFact() {
+  try {
+    const response = await fetch('https://catfact.ninja/fact');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    console.log('Cat Fact:', data.fact);
+  } catch (error) {
+    console.error('Error fetching cat fact:', error);
+  }
+}
+
+getCatFact();`;
   return (
     <section className="py-32 flex justify-center min-h-screen px-4">
       <div className="container">
@@ -78,7 +95,7 @@ const Hero1 = ({
           <div
             className="max-h-96 w-full rounded-md object-cover border-2"
           >
-            <Editor height="30vh" theme="vs-dark"defaultLanguage="javascript" defaultValue="// some comment" />
+            <Editor height="30vh" theme="vs-dark"defaultLanguage="javascript" defaultValue={code} />
           </div>
         </div>
       </div>
