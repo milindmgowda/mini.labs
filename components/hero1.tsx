@@ -60,8 +60,8 @@ const Hero1 = ({
 
 getCatFact();`;
   return (
-    <section className="py-32 flex justify-center min-h-screen px-4">
-      <div className="container">
+    <section className="py-16 lg:py-32 flex justify-center min-h-screen">
+      <div className="container px-4 mx-auto">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {badge && (
@@ -93,7 +93,7 @@ getCatFact();`;
             </div>
           </div>
           <div
-            className="max-h-96 w-full rounded-md object-cover border-2"
+            className="max-h-96 w-full rounded-md object-cover border-2 lg:max-h-[50vh]"
           >
             <Editor height="30vh" theme="vs-dark"defaultLanguage="javascript" defaultValue={code} />
           </div>
